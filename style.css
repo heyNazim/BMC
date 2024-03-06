@@ -4,11 +4,30 @@
   }
 
 /* utility classes */
+#deskopbanner{
+  height: 100vh;
+}
+.conform{
+  width: 40%;
+  margin: auto;
+}
 body{
     background-color: #1f2029;
 }
+.iframe{
+  height: 240px;
+  width: 240px;
+}
+.nnn{
+  flex-wrap: wrap;
+}
+h1{
+  color: #fff;
+  font-size: 72px;
+}
 h2{
-    color: #343541;
+    color: #c6c7d4;
+    text-align: center;
 }
 h3{
     font-size: 17px;
@@ -17,11 +36,18 @@ h3{
 p{
     font-size: 14px;
 }
+
 /* utility classes END */
 
 /* NAVBAR  */
+.navbar{
+  /* position: sticky !important;
+  top: 0; */
+}
 .modal-content{
     background-color: #0d0b0e;
+    z-index: 22;
+    opacity: 5766;
     color: #fff;
 }
 .modal-body>ul>li{
@@ -42,9 +68,14 @@ p{
     background-color: #0d0b0e;
     align-items: center;
 }
+nav{
+  /* position: sticky !important;
+  top: 0 !important; */
+}
 .my-hamburger{
     border: none;
     padding: 0px;
+    
     background: none;
 margin: 0px;
 width: 40px;
@@ -52,6 +83,9 @@ margin-bottom: 10px;
 height: 40px;
 
     color: #fff;
+}
+.btn-close{
+  background-color: wheat;
 }
 
 /* NAVBAR END */
@@ -68,6 +102,8 @@ height: 40px;
 .about-div{
     width: 350px;
     background-color: #0d0b0e;
+    border: 2px dashed white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 20px;
     text-align: center;
     margin-top: 20px !important;
@@ -107,169 +143,120 @@ height: 40px;
 }
 /* Make-Something-Together END */
 
-/* SOCIAL BUTTON */
-.Btn {
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    margin-right: 20px;
-    background-color: transparent;
-    position: relative;
-    /* overflow: hidden; */
-    border-radius: 7px;
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-  
-  .svgContainer {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    backdrop-filter: blur(0px);
-    letter-spacing: 0.8px;
-    border-radius: 10px;
-    transition: all 0.3s;
-    border: 1px solid rgba(156, 156, 156, 0.466);
-  }
-  
-  .BG {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: #1877f2;
-    z-index: -1;
-    border-radius: 10px;
-    pointer-events: none;
-    transition: all 0.3s;
-  }
-  
-  .Btn:hover .BG {
-    transform: rotate(35deg);
-    transform-origin: bottom;
-  }
-  
-  .Btn:hover .svgContainer {
-    border: 1px solid rgba(230, 230, 230, 0.466);
-    background-color: rgba(204, 204, 204, 0.466);
-    backdrop-filter: blur(4px);
-  }
-  
-/* SOCIAL BUTTON END */
 
-.Btn2 {
-    width: 45px;
-    margin-right: 20px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    background-color: transparent;
-    position: relative;
-    /* overflow: hidden; */
-    border-radius: 7px;
-    cursor: pointer;
-    transition: all .3s;
-  }
+  /* CONER */
   
-  .svgContainer2 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    backdrop-filter: blur(4px);
-    letter-spacing: 0.8px;
-    border-radius: 10px;
-    transition: all .3s;
-    border: 1px solid rgba(156, 156, 156, 0.466);
-  }
-  
-  .BG2 {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: #f09433;
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-    z-index: -1;
-    border-radius: 9px;
-    pointer-events: none;
-    transition: all .3s;
-  }
-  
-  .Btn2:hover .BG2 {
-    transform: rotate(35deg);
-    transform-origin: bottom;
-  }
-  
-  .Btn2:hover .svgContainer2 {
-    background-color: rgba(156, 156, 156, 0.466);
-  }
-  
+.section-heading {
+  font-size: 22x;
+}
+#hero,
+#pricing {
+  background: var(--bg-hero);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#section_counter {
+  padding: 5rem 0;
+  background: var(--bg-counter);
+}
+#section_counter .section-heading {
+  padding-bottom: 5rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+.counter-grid {
+display: flex;
+flex-direction: row;
+justify-content: space-between !important;
+align-items: stretch;
 
-  /*  */
-  .LinkedinBtn {
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    background-color: transparent;
-    position: relative;
-    border-radius: 7px;
-    cursor: pointer;
-    transition: all 0.3s;
+color: white;
+flex-wrap: wrap;
+
+}
+
+.counter-item {
+
+background-color: #0d0b0e;  /* padding: 3rem 1.5rem; */
+  color: white ;
+  text-align: center;
+  border-radius: 1rem;
+width: 250px;
+  padding: 40px;
+  transition: all 0.4s ease-in-out;
+  transform: translateY(6rem);
+}
+
+
+.counter-item:hover {
+  background-color: #343541;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.counter-item .counter {
+  font-size: 4.5rem;
+  color: transparent;
+  color: transparent;
+  letter-spacing: 0.5rem;
+  -webkit-text-stroke-width: 0.15rem;
+  -moz-text-stroke-width: 0.15rem;
+  -ms-text-stroke-width: 0.15rem;
+  -o-text-stroke-width: 0.15rem;
+  -webkit-text-stroke-color: var(--white);
+  -moz-text-stroke-color: var(--white);
+  -ms-text-stroke-color: var(--white);
+  -o-text-stroke-color: var(--white);
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(6rem);
   }
-  
-  .LinkedinBtn .svgContainer3 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    backdrop-filter: blur(4px);
-    letter-spacing: 1px; /* Adjusted letter spacing */
-    border-radius: 10px;
-    transition: all 0.3s;
-    border: 1px solid rgba(156, 156, 156, 0.466);
+  100% {
+    transform: translateY(0rem);
   }
-  
-  .LinkedinBtn .BG3 {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: #0077b5;
-    z-index: -1;
-    border-radius: 9px;
-    pointer-events: none;
-    transition: all 0.3s;
+}
+  /* CONER end */
+
+  @media only screen and (max-width: 600px) {
+    .mobilebanner{
+      display: none;
+    }
   }
-  
-  .LinkedinBtn:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Added box shadow effect */
+
+  @media only screen and (max-width: 600px) {
+    .counter-item{
+      width: 100%;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .conform{
+      width: 100%;
+    }
+    .iframe{
+      height: 250px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .Serving-the-best-box{
+      width: 100%;
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+    .modal-body{
+      flex-direction: column;
+    }
+    .kkk{
+      flex-direction: column-reverse;
+    }
+    .sos{
+      padding: 20px;
+    }
+    .sos2{
+      display: none;
+    }
+    #deskopbanner{
+      height: 40vh;
+    }
   }
-  
-  .LinkedinBtn:hover .BG3 {
-    transform: rotate(35deg);
-    transform-origin: bottom;
-  }
-  
-  .LinkedinBtn:hover .svgContainer {
-    background-color: rgba(156, 156, 156, 0.466);
-  }
-  

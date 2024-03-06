@@ -9,7 +9,158 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <link rel="stylesheet" href="./style.css">
+<style>
+  button {
+  position: relative;
+  padding: 12px 35px;
+  background: #fec195;
+  font-size: 17px;
+  font-weight: 500;
+  color: #181818;
+  border: 3px solid #fec195;
+  border-radius: 8px;
+  box-shadow: 0 0 0 #fec1958c;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
 
+.star-1 {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 25px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+}
+
+.star-2 {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-3 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-4 {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  width: 8px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-5 {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 0.6s cubic-bezier(0, 0.4, 0, 1.01);
+}
+
+.star-6 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fffdef);
+  z-index: -5;
+  transition: all 0.8s ease;
+}
+
+button:hover {
+  background: transparent;
+  color: #fec195;
+  box-shadow: 0 0 25px #fec1958c;
+}
+
+button:hover .star-1 {
+  position: absolute;
+  top: -80%;
+  left: -30%;
+  width: 25px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+button:hover .star-2 {
+  position: absolute;
+  top: -25%;
+  left: 10%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+button:hover .star-3 {
+  position: absolute;
+  top: 55%;
+  left: 25%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+button:hover .star-4 {
+  position: absolute;
+  top: 30%;
+  left: 80%;
+  width: 8px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+button:hover .star-5 {
+  position: absolute;
+  top: 25%;
+  left: 115%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+button:hover .star-6 {
+  position: absolute;
+  top: 5%;
+  left: 60%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fffdef);
+  z-index: 2;
+}
+
+.fil0 {
+  fill: #fffdef;
+}
+
+</style>
 </head>
 <body>
  <nav class="navbar">
@@ -69,14 +220,30 @@
                         <li><a href="./index.html"> HOME</a></li>
                         <li><a href="./our-work.html"> Our Work</a></li>
                         <li><a href="./about-us.html">About Us</a> </li>
-                        <li><a href="">Blogs</a></li>
+                        <li><a href="./blogs.html">Blogs</a></li>
+
                         <li><a href="./contact-us.html">Contact Us</a></li>
                     </ul>
                     <div>
                         <p>We're On The Map</p>
                         <p>Noida Sector 16 </p>
-                        <p>We're Social</p>
-                        <p>Drop us a line</p>
+  <p>We're Social</p>
+                          <a class="m-1" href="">
+          <img height="40" src="./images/socialicon/facebook_2504903.png" alt="">
+        </a>
+        <a class="m-1" href="">
+          <img height="40" src="./images/socialicon/letter-x_12654263.png" alt="">
+        </a>
+        <a class="m-1" href="https://www.linkedin.com/company/brand-mechanic-communications/?originalSubdomain=in">
+          <img height="40" src="./images/socialicon/linkedin_3536505.png" alt="">
+        </a>
+        <a class="m-1" href="https://youtube.com/@BrandMechanicCommunications?si=IILtQB5Kh5hqxhxq">
+          <img height="40" src="./images/socialicon/youtube_1384060.png" alt="">
+        </a>
+        <a class="m-1" href="https://www.instagram.com/brandmechanic.in/?hl=en">
+          <img height="40" src="./images/socialicon/instagram_2111463.png" alt="">
+        </a>
+                         <p>Drop us a line</p>
                         <p>office@brandmechanic.in</p>
                     </div>
                 </div>
@@ -89,36 +256,140 @@
 <!-- Telling your brand story with colours, fonts and designs. -->
 <section class="mt-5 p-5">
     <div class="container text-center">
+      <h1>our work</h1>
         <h2>Telling your brand story with colours, fonts and designs.</h2>
-        <button>Get In Touch</button>
+        <br><br>
+        <button>
+        <a style="text-decoration: none; color: #fff;" href="./contact-us.html">Get In Touch</a>  
+          <div class="star-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve"
+              version="1.1"
+              style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+              viewBox="0 0 784.11 815.53"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs></defs>
+              <g id="Layer_x0020_1">
+                <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                <path
+                  class="fil0"
+                  d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="star-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve"
+              version="1.1"
+              style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+              viewBox="0 0 784.11 815.53"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs></defs>
+              <g id="Layer_x0020_1">
+                <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                <path
+                  class="fil0"
+                  d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="star-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve"
+              version="1.1"
+              style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+              viewBox="0 0 784.11 815.53"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs></defs>
+              <g id="Layer_x0020_1">
+                <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                <path
+                  class="fil0"
+                  d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="star-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve"
+              version="1.1"
+              style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+              viewBox="0 0 784.11 815.53"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs></defs>
+              <g id="Layer_x0020_1">
+                <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                <path
+                  class="fil0"
+                  d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="star-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve"
+              version="1.1"
+              style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+              viewBox="0 0 784.11 815.53"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs></defs>
+              <g id="Layer_x0020_1">
+                <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                <path
+                  class="fil0"
+                  d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="star-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve"
+              version="1.1"
+              style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+              viewBox="0 0 784.11 815.53"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs></defs>
+              <g id="Layer_x0020_1">
+                <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                <path
+                  class="fil0"
+                  d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </button>
+        
     </div>
 </section>
 <!-- Telling your brand story with colours, fonts and designs. END -->
 <!-- VEDIO SECTION -->
 <section class="mt-5">
     <div class="container-fluid">
-        <h2>videos</h2>
-        <div class="d-flex justify-content-between">
-            <video width="19.7%" controls>
-                <source src="mov_bbb.mp4" type="video/mp4">
-                <source src="mov_bbb.ogg" type="video/ogg">
-              </video>
-              <video width="19.7%" controls>
-                <source src="mov_bbb.mp4" type="video/mp4">
-                <source src="mov_bbb.ogg" type="video/ogg">
-              </video>
-              <video width="19.7%" controls>
-                <source src="mov_bbb.mp4" type="video/mp4">
-                <source src="mov_bbb.ogg" type="video/ogg">
-              </video>
-              <video width="19.7%" controls>
-                <source src="mov_bbb.mp4" type="video/mp4">
-                <source src="mov_bbb.ogg" type="video/ogg">
-              </video>
-              <video width="19.7%" controls>
-                <source src="mov_bbb.mp4" type="video/mp4">
-                <source src="mov_bbb.ogg" type="video/ogg">
-              </video>
+        <h2>Our videos</h2>
+        <div class="d-flex justify-content-between nnn">
+          <iframe class="iframe" src="https://www.youtube.com/embed/hGi2vF1zmTE?si=SMszRHQ0olQ2aJnA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe class="iframe" src="https://www.youtube.com/embed/ME95Jj1PqfA?si=IphPI-h7iBr-vSlK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe class="iframe" src="https://www.youtube.com/embed/vBweEsfiz_E?si=Au0jcpZJlegu1W4q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe class="iframe" src="https://www.youtube.com/embed/qq5wtmcRE9Q?si=DtGgCbq3u5Xi0HY9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe class="iframe" src="https://www.youtube.com/embed/cuQ1oqrM4J8?si=XwLlwGlh9HKcRbDG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </div>
 </section>
@@ -128,11 +399,11 @@
     <div class="container">
         <h2>Our story of success</h2>
 
-        <div style="background-color: black;" class="row">
+        <div style="background-color: black;" class="row sos">
             <div class="col-md-6" >
+              <img class="img-fluid mySlides" src="./images/deskopbanner/WhatsApp Image 2024-03-04 at 18.16.00_f34f4799.jpg" alt="">
+              <img class="img-fluid mySlides" src="./images/deskopbanner/WhatsApp Image 2024-03-04 at 18.16.00_522af72b.jpg" alt="">
                 <img class="img-fluid mySlides" src="./images/deskopbanner/WhatsApp Image 2024-03-04 at 18.15.59_c3a1a7c6.jpg" alt="">
-                <img class="img-fluid mySlides" src="./images/deskopbanner/WhatsApp Image 2024-03-04 at 18.16.00_522af72b.jpg" alt="">
-                <img class="img-fluid mySlides" src="./images/deskopbanner/WhatsApp Image 2024-03-04 at 18.16.00_f34f4799.jpg" alt="">
             </div>
             <div class="col-md-6 text-light d-flex flex-column align-items-center justify-content-center">
                 <h3>Hero Electric</h3>
@@ -141,26 +412,26 @@
             </div>
         </div>
 <br>
-        <div style="background-color: black;" class="row">
+        <div style="background-color: black;" class="row sos sos2">
             <div class="col-md-6 text-light d-flex flex-column align-items-center justify-content-center">
                 <h3>Ezyspit</h3>
                 <p>EzySpit wanted to launch their products to the world but also to create the nationwide media ripple through strong PR.                </p>
                 <button>Read More...</button>
             </div>
             <div class="col-md-6" >
-                <img class="img-fluid mySlides2" src="./images/deskopbanner/WhatsApp Image 2024-03-04 at 18.15.59_c3a1a7c6.jpg" alt="">
-                <img class="img-fluid mySlides2" src="./images/deskopbanner/WhatsApp Image 2024-03-04 at 18.16.00_522af72b.jpg" alt="">
+              <img class="img-fluid mySlides2" src="./images/deskopbanner/WhatsApp Image 2024-03-04 at 18.16.00_522af72b.jpg" alt="">
+              <img class="img-fluid mySlides2" src="./images/deskopbanner/WhatsApp Image 2024-03-04 at 18.15.59_c3a1a7c6.jpg" alt="">
                 <img class="img-fluid mySlides2" src="./images/deskopbanner/WhatsApp Image 2024-03-04 at 18.16.00_f34f4799.jpg" alt="">
             </div>
            
         </div>
         <br>
 
-        <div style="background-color: black;" class="row">
+        <div style="background-color: black;" class="row sos">
             <div class="col-md-6" >
                 <img class="img-fluid mySlides3" src="./images/deskopbanner/WhatsApp Image 2024-03-04 at 18.15.59_c3a1a7c6.jpg" alt="">
+                <img class="img-fluid mySlides3" src="./images/deskopbanner/WhatsApp Image 2024-03-04 at 18.16.00_f34f4799.jpg" alt="">
                 <img class="img-fluid mySlides3" src="./images/deskopbanner/WhatsApp Image 2024-03-04 at 18.16.00_522af72b.jpg" alt="">
-                <img class="img-fluid mySlides3" src="./images/deskopbanner/WhatsApp Image 2024-03-04 at 18.16.00_f34f4799.jpg1" alt="">
             </div>
             <div class="col-md-6 text-light d-flex flex-column align-items-center justify-content-center">
                 <h3>India At Home</h3>
@@ -279,6 +550,33 @@
     </div>
 </section>
 <!-- Serving the best. END -->
+<!-- CONER-->
+<section id="section_counter">
+    <div class="container">
+      <h2 class="section-heading">Committed to excellence.</h2>
+    </div>
+    <div class="container">
+      <div class="counter-grid">
+        <div class="counter-item">
+            <h1 style="color: white;" class="counter" data-target="2">0</h1>
+            <h3>Locations</h3>
+        </div>
+        <div class="counter-item">
+            <h1 style="color: white;" class="counter" data-target="235">0</h1>
+            <h3>Clients</h3>
+        </div>
+        <div class="counter-item">
+            <h1 style="color: white;" class="counter" data-target="5">0</h1>
+            <h3>Years</h3>
+        </div>
+        <div class="counter-item">
+            <h1 style="color: white;" class="counter" data-target="40">0</h1>
+            <h3>Events</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- CONER END -->
 <!-- Let’s Make Something Together -->
 <section class="mt-5 p-5 text-light Make-Something-Together">
     <h3>Let’s Make Something Together</h3>
@@ -287,32 +585,29 @@
 </section>
 <!-- Let’s Make Something Together END -->
 <!-- FOOTER -->
-<footer class="mt-5 p-2">
-    <div class="container d-flex justify-content-between text-light">
-
-<p>All Rights Reserved @ Brand Mechanic Communications.</p>
-<div>
-    <button class="Btn">
-        <span class="svgContainer">
-          <svg
-            viewBox="0 0 320 512"
-            height="1.3em"
-            xmlns="http://www.w3.org/2000/svg"
-            class="svgIcon"
-            fill="white"
-          >
-            <path
-              d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
-            ></path>
-          </svg>
-        </span>
-        <span class="BG"></span>
-      </button>
-      
-</div>
-</div>
-
-</footer>
+<footer class="m-3 p-2">
+    <div class="container kkk d-flex justify-content-between text-light align-items-center">
+      <p style="margin: 0px;">All Rights Reserved @ Brand Mechanic Communications.</p>
+      <div class="d-flex">
+        <a class="m-1" href="">
+          <img height="40" src="./images/socialicon/facebook_2504903.png" alt="">
+        </a>
+        <a class="m-1" href="">
+          <img height="40" src="./images/socialicon/letter-x_12654263.png" alt="">
+        </a>
+        <a class="m-1" href="https://www.linkedin.com/company/brand-mechanic-communications/?originalSubdomain=in">
+          <img height="40" src="./images/socialicon/linkedin_3536505.png" alt="">
+        </a>
+        <a class="m-1" href="https://youtube.com/@BrandMechanicCommunications?si=IILtQB5Kh5hqxhxq">
+          <img height="40" src="./images/socialicon/youtube_1384060.png" alt="">
+        </a>
+        <a class="m-1" href="https://www.instagram.com/brandmechanic.in/?hl=en">
+          <img height="40" src="./images/socialicon/instagram_2111463.png" alt="">
+        </a>
+        
+      </div>
+    </div>
+  </footer>
 <!-- FOOTER END -->
 
 <script>
@@ -359,6 +654,7 @@
       setTimeout(carousel3, 2000); // Change image every 2 seconds
     }
     </script>
+    <script src="./myscript.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

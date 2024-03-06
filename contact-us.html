@@ -15,6 +15,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <link rel="stylesheet" href="./style.css" />
+<script>
+  function takeformdata(){
+  var name = document.getElementById("MyName").value;
+  var email = document.getElementById("MyEmail").value;
+  var Query = document.getElementById("MyQuery").value;
+  var link = document.getElementById("waLink");
+// Clear previous query parameters
+  link.href = "https://wa.me/";
+
+  // Append new query parameters
+  link.href += `8095825520?text=You Have a new Query %20 Name is: ${name} and the Query is :${Query} and the Email  is :${email}`; 
+
+      }
+</script>
   </head>
   <body>
     <nav class="navbar">
@@ -74,14 +88,30 @@
                           <li><a href="./index.html"> HOME</a></li>
                           <li><a href="./our-work.html"> Our Work</a></li>
                           <li><a href="./about-us.html">About Us</a> </li>
-                          <li><a href="">Blogs</a></li>
+                          <li><a href="./blogs.html">Blogs</a></li>
+
                           <li><a href="./contact-us.html">Contact Us</a></li>
                       </ul>
                       <div>
                           <p>We're On The Map</p>
                           <p>Noida Sector 16 </p>
-                          <p>We're Social</p>
-                          <p>Drop us a line</p>
+    <p>We're Social</p>
+                          <a class="m-1" href="">
+          <img height="40" src="./images/socialicon/facebook_2504903.png" alt="">
+        </a>
+        <a class="m-1" href="">
+          <img height="40" src="./images/socialicon/letter-x_12654263.png" alt="">
+        </a>
+        <a class="m-1" href="https://www.linkedin.com/company/brand-mechanic-communications/?originalSubdomain=in">
+          <img height="40" src="./images/socialicon/linkedin_3536505.png" alt="">
+        </a>
+        <a class="m-1" href="https://youtube.com/@BrandMechanicCommunications?si=IILtQB5Kh5hqxhxq">
+          <img height="40" src="./images/socialicon/youtube_1384060.png" alt="">
+        </a>
+        <a class="m-1" href="https://www.instagram.com/brandmechanic.in/?hl=en">
+          <img height="40" src="./images/socialicon/instagram_2111463.png" alt="">
+        </a>
+                           <p>Drop us a line</p>
                           <p>office@brandmechanic.in</p>
                       </div>
                   </div>
@@ -92,10 +122,13 @@
         </div>
       </nav>
     <!-- Get in touch and give a new life to your brand -->
-    <section>
+    <section class="mt-5">
       <div class="container">
+        <h1 class="text-center">Contact Us</h1>
+
         <h2>Get in touch and give a new life to your brand</h2>
-        <div class="row text-light text-center">
+        <br><br>
+        <div class="row text-light text-center mt-3">
           <div class="col-md-4">
             <div class="p-4" style="background-color: black">
                 <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-telephone-forward" viewBox="0 0 16 16">
@@ -136,21 +169,26 @@
     <section class="mt-5 mb-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 text-light"> 
-                    drop us a line
-
-                </div>
-                <div class="col-md-6">
-                <form>
-                    <input style="width: 48%; background-color: black; color: #fff; border: none; padding: 10px;" type="text" placeholder="Enter Your Full Name ">
-                    <input style="width: 48%; background-color: black; color: #fff; border: none; padding: 10px;" type="Email" placeholder="Enter Your Emial Address"> 
-                    <textarea  class="mt-3" id="w3review" name="w3review" rows="4" style="width: 96.7%; background-color: black;color: #fff; padding: 10px  ;"></textarea>
+              
+              <div style="background-color: black; color: white;" class="col  p-4 ">
+                <h3 class="text-center">connect with us </h3>
+                  <form class="conform">
+                    <div class="mb-3 d-flex">
+                      <input onchange="takeformdata()"  id="MyName" type="text" class="form-control" placeholder='Name' >
+                    </div>
+                    <div class="mb-3">
+                      <input type="email" onchange="takeformdata()"  class="form-control" id="MyEmail" aria-describedby="emailHelp" placeholder='Email'>
+                    </div>
+                    <div class="form-floating">
+                      <textarea onchange="takeformdata()"  class="form-control" placeholder="Leave a comment here" id="MyQuery" style="height: 100px"></textarea>
+                      <label for="floatingTextarea2">Comments</label>
+                    </div>
                     <br>
-                    <input type="submit" value="Submit">
-                </form>    
+                    <a  onclick="takeformdata()" style="width: 300px; background-color:#ef7b55"  class="p-2 mt-2" id="waLink" href="https://wa.me/" target="_blank">Submit</a>
+                  </form> 
                 </div>
             </div>
-            <!-- <div style="width: 100%;" class="visme_d" data-title="Untitled Project" data-url="01exezm3-untitled-project" data-domain="forms" data-full-page="false" data-min-height="500px" data-form-id="39479"></div><script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script> -->
+            <!-- <div style="width: 100%;" class="visme_d" data-title="Untitled Project" data-url="01exezm3-untitled-project" data-domain="forms" data-full-page="false" data-min-height="500px" data-form-id="39479"></div><script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></> -->
         </div>
     </section>
     <!-- CONTACT FORM END -->
@@ -171,47 +209,24 @@
     <!-- Let’s Make Something Together END -->
     <!-- FOOTER -->
     <footer class="m-3 p-2">
-      <div class="container d-flex justify-content-between text-light align-items-center">
+      <div class="container kkk d-flex justify-content-between text-light align-items-center">
         <p style="margin: 0px;">All Rights Reserved @ Brand Mechanic Communications.</p>
         <div class="d-flex">
-          <button class="Btn">
-            <span class="svgContainer">
-              <svg
-                viewBox="0 0 320 512"
-                height="1.3em"
-                xmlns="http://www.w3.org/2000/svg"
-                class="svgIcon"
-                fill="white"
-              >
-                <path
-                  d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
-                ></path>
-              </svg>
-            </span>
-            <span class="BG"></span>
-          </button>
-          <button class="Btn2">
-            <span class="svgContainer2">
-              <svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
-            </span>
-            <span class="BG2"></span>
-           </button>
-           <button class="LinkedinBtn">
-            <span class="svgContainer3">
-              <svg
-                viewBox="0 0 24 24"
-                height="24"
-                width="24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                ></path>
-              </svg>
-            </span>
-            <span class="BG3"></span>
-          </button>
-          
+          <a class="m-1" href="">
+            <img height="40" src="./images/socialicon/facebook_2504903.png" alt="">
+          </a>
+          <a class="m-1" href="">
+            <img height="40" src="./images/socialicon/letter-x_12654263.png" alt="">
+          </a>
+          <a class="m-1" href="https://www.linkedin.com/company/brand-mechanic-communications/?originalSubdomain=in">
+            <img height="40" src="./images/socialicon/linkedin_3536505.png" alt="">
+          </a>
+          <a class="m-1" href="https://youtube.com/@BrandMechanicCommunications?si=IILtQB5Kh5hqxhxq">
+            <img height="40" src="./images/socialicon/youtube_1384060.png" alt="">
+          </a>
+          <a class="m-1" href="https://www.instagram.com/brandmechanic.in/?hl=en">
+            <img height="40" src="./images/socialicon/instagram_2111463.png" alt="">
+          </a>
         </div>
       </div>
     </footer>
