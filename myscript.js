@@ -65,3 +65,16 @@ function hello() {
 hello(); // Call the function to start listening for resize events
 
 
+function takeFormData() {
+  var name = document.getElementById("MyName").value;
+  var email = document.getElementById("MyEmail").value;
+  var phone = document.getElementById("MyPhone").value;
+  var query = document.getElementById("MyQuery").value;
+  var link = document.getElementById("waLink");
+
+  // Clear previous query parameters
+  link.href = "https://wa.me/";
+
+  // Append new query parameters
+  link.href += `8095825520?text=You Have a new Query %20 Name is: ${name} || Contact no is: ${phone} || Email is: ${email} & the Query is: ${query}`;
+}

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bootstrap demo</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="./style.css">
+<style>
+    button {
+    position: relative;
+    padding: 12px 35px;
+    background: #fec195;
+    font-size: 17px;
+    font-weight: 500;
+    color: #181818;
+    border: 3px solid #fec195;
+    border-radius: 8px;
+    box-shadow: 0 0 0 #fec1958c;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .star-1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+  }
+  
+  .star-2 {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-3 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-4 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.6s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.8s ease;
+  }
+  
+  button:hover {
+    background: transparent;
+    color: #fec195;
+    box-shadow: 0 0 25px #fec1958c;
+  }
+  
+  button:hover .star-1 {
+    position: absolute;
+    top: -80%;
+    left: -30%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-2 {
+    position: absolute;
+    top: -25%;
+    left: 10%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-3 {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-4 {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 115%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .fil0 {
+    fill: #fffdef;
+  }
+  
+  </style>
+
+</head>
+<body>
+ <nav class="navbar">
+      <div class="container d-flex justify-content-between">
+        <div class="nav-left">
+            <a href="./index.html">
+
+                <img height="70px" src="./images/BMC-logo1-1.png" alt="" />
+            </a>
+        </div>
+        <div class="nav-right">
+          <div class="container mt-3">
+            <button
+              type="button"
+              class="my-hamburger"
+              data-bs-toggle="modal"
+              data-bs-target="#myModal"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100%"
+                height="100%"
+                fill="currentColor"
+                class="bi bi-list"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- The Modal -->
+          <div class="modal" id="myModal">
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">
+                    <a href="./index.html">
+
+                        <img src="./images/BMC-logo1-1.png"  height="60px" alt="">
+                    </a>
+                  </h4>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                  ></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body d-flex justify-content-around align-items-center">
+                    <ul>
+                        <li><a href="./index.html"> HOME</a></li>
+                        <li><a href="./our-work.html"> Our Work</a></li>
+                        <li><a href="./about-us.html">About Us</a> </li>
+                        <li><a href="./blogs.html">Blogs</a></li>
+                        <li><a href="./contact-us.html">Contact Us</a></li>
+                    </ul>
+                    <div>
+                        <p>We're On The Map</p>
+                        <p>Noida Sector 16 </p>
+  <p>We're Social</p>
+                          <a class="m-1" href="">
+          <img height="40" src="./images/socialicon/facebook_2504903.png" alt="">
+        </a>
+        <a class="m-1" href="">
+          <img height="40" src="./images/socialicon/letter-x_12654263.png" alt="">
+        </a>
+        <a class="m-1" href="https://www.linkedin.com/company/brand-mechanic-communications/?originalSubdomain=in">
+          <img height="40" src="./images/socialicon/linkedin_3536505.png" alt="">
+        </a>
+        <a class="m-1" href="https://youtube.com/@BrandMechanicCommunications?si=IILtQB5Kh5hqxhxq">
+          <img height="40" src="./images/socialicon/youtube_1384060.png" alt="">
+        </a>
+        <a class="m-1" href="https://www.instagram.com/brandmechanic.in/?hl=en">
+          <img height="40" src="./images/socialicon/instagram_2111463.png" alt="">
+        </a>
+                  
+                        <p>Drop us a line</p>
+                        <p>office@brandmechanic.in</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+<!-- Banner -->
+<section class="text-center mt-3">
+    <img src="./images/Heroelectric-resize.jpg" class="img-fluid" alt="">
+</section>
+<!-- Banner END -->
+<section class="mt-5">
+    <div class="container  text-light text-center">
+        <h2>About Hero Electric</h2>
+        <p>Hero Electric is India’s first and largest manufacturer of electric 2-wheelers with hundreds of thousands happy customers across the country and growing day by day.        </p>
+  
+        <h2>Project</h2>
+        <p>Hero Electric wanted to test the waters with a wide spread outdoor campaign of their newly launched Electric Scooties around Diwali. It was for the first time ever when Hero Electric has planned to do a nationwide hoarding campaign. We were roped in for the task and we carefully strategized and scouted the best of the locations from Kashmir to Kanyakumari. After spending pain-strikingly long hours in planning every minuscule detail of the campaign, we successfully executed the campaign with 400+ hoardings across 23 states, just in time of Diwali which is one of the busiest time of the year for any vendor, agency and marketer.        </p>
+  
+        <h2>Challenges</h2>
+        <p>We were tasked with a month long campaign which required changing of the hoarding’s design every 15 days. Since, it was Diwali and hoardings were also placed in far-flung areas of north-east and south Indian cities, it was race against time for us.        </p>
+  
+    </div>
+</section>
+
+
+
+<!-- Our story of success -->
+<section class="mt-5">
+    <div class="container">
+        <h2>Our story of success</h2>
+
+        <div style="background-color: black;" class="row sos sos2">
+            <div class="col-md-6 text-light d-flex flex-column align-items-center justify-content-center">
+                <h3>Ezyspit</h3>
+                <p>EzySpit wanted to launch their products to the world but also to create the nationwide media ripple through strong PR.                </p>
+                <a href="./ezyspit.html"><button> Read More...</button></a> 
+              </div>
+            <div class="col-md-6" >
+              <img class="img-fluid mySlides2" src="./images/deskopbanner/WhatsApp Image 2024-03-04 at 18.16.00_522af72b.jpg" alt="">
+              <img class="img-fluid mySlides2" src="./images/deskopbanner/WhatsApp Image 2024-03-04 at 18.15.59_c3a1a7c6.jpg" alt="">
+                <img class="img-fluid mySlides2" src="./images/deskopbanner/WhatsApp Image 2024-03-04 at 18.16.00_f34f4799.jpg" alt="">
+            </div>
+           
+        </div>
+        <br>
+  
+        <div style="background-color: black;" class="row sos">
+            <div class="col-md-6" >
+                <img class="img-fluid mySlides3" src="./images/deskopbanner/WhatsApp Image 2024-03-04 at 18.15.59_c3a1a7c6.jpg" alt="">
+                <img class="img-fluid mySlides3" src="./images/deskopbanner/WhatsApp Image 2024-03-04 at 18.16.00_f34f4799.jpg" alt="">
+                <img class="img-fluid mySlides3" src="./images/deskopbanner/WhatsApp Image 2024-03-04 at 18.16.00_522af72b.jpg" alt="">
+            </div>
+            <div class="col-md-6 text-light d-flex flex-column align-items-center justify-content-center">
+                <h3>India At Home</h3>
+                <p>India At Home wanted to create the mini-India feel through the branding of their new store in Melbourne, Australia.</p>
+                <a href="./india-at-home.html"><button> Read More...</button></a> 
+              </div>
+        </div>
+    </div>
+  </section>
+  <!-- Our story of success END -->
+  
+  
+  
+
+<!-- CONER-->
+<section id="section_counter">
+    <div class="container">
+      <h2 class="section-heading">Committed to excellence.</h2>
+    </div>
+    <div class="container">
+      <div class="counter-grid">
+        <div class="counter-item">
+            <h1 style="color: white;" class="counter" data-target="2">0</h1>
+            <h3>Locations</h3>
+        </div>
+        <div class="counter-item">
+            <h1 style="color: white;" class="counter" data-target="235">0</h1>
+            <h3>Clients</h3>
+        </div>
+        <div class="counter-item">
+            <h1 style="color: white;" class="counter" data-target="5">0</h1>
+            <h3>Years</h3>
+        </div>
+        <div class="counter-item">
+            <h1 style="color: white;" class="counter" data-target="40">0</h1>
+            <h3>Events</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- CONER END -->
+<!-- Let’s Make Something Together -->
+<section class="mt-5 p-5 text-light Make-Something-Together">
+    <h3>Let’s Make Something Together</h3>
+    <span>        Start by
+        saying hi</span>
+</section>
+<!-- Let’s Make Something Together END -->
+<!-- FOOTER -->
+<footer class="m-3 p-2">
+  <div class="container kkk d-flex justify-content-between text-light align-items-center">
+    <p class="ioio" style="margin: 0px;">All Rights Reserved @ Brand Mechanic Communications.</p>
+    <div class="d-flex">
+      <a class="m-1" href="">
+        <img height="40" src="./images/socialicon/facebook_2504903.png" alt="">
+      </a>
+      <a class="m-1" href="">
+        <img height="40" src="./images/socialicon/letter-x_12654263.png" alt="">
+      </a>
+      <a class="m-1" href="https://www.linkedin.com/company/brand-mechanic-communications/?originalSubdomain=in">
+        <img height="40" src="./images/socialicon/linkedin_3536505.png" alt="">
+      </a>
+      <a class="m-1" href="https://youtube.com/@BrandMechanicCommunications?si=IILtQB5Kh5hqxhxq">
+        <img height="40" src="./images/socialicon/youtube_1384060.png" alt="">
+      </a>
+      <a class="m-1" href="https://www.instagram.com/brandmechanic.in/?hl=en">
+        <img height="40" src="./images/socialicon/instagram_2111463.png" alt="">
+      </a>
+    </div>
+  </div>
+</footer>
+<!-- FOOTER END -->
+<script>
+ 
+    var myIndex2 = 0;
+    carousel2();
+    
+    function carousel2() {
+      var j;
+      var y = document.getElementsByClassName("mySlides2");
+      for (j = 0; j < y.length; j++) {
+        y[j].style.display = "none";  
+      }
+      myIndex2++;
+      if (myIndex2 > y.length) {myIndex2 = 1}    
+      y[myIndex2-1].style.display = "block";  
+      setTimeout(carousel2, 2000); // Change image every 2 seconds
+    }
+    var myIndex3 = 0;
+    carousel3();
+    
+    function carousel3() {
+      var k;
+      var z = document.getElementsByClassName("mySlides3");
+      for (k = 0; k < z.length; k++) {
+        z[k].style.display = "none";  
+      }
+      myIndex3++;
+      if (myIndex3 > z.length) {myIndex3 = 1}    
+      z[myIndex3-1].style.display = "block";  
+      setTimeout(carousel3, 2000); // Change image every 2 seconds
+    }
+    </script>
+    <script src="./myscript.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

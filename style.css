@@ -2,10 +2,20 @@
 .mySlides {
     display: none;
   }
-
-/* utility classes */
 #deskopbanner{
-  height: 100vh;
+  overflow: hidden !important;
+  height: 100%;
+  width: 100%;
+}
+/* utility classes */
+
+#deskopbanner{
+  height:85vh;
+  overflow: hidden !important;
+}
+#main-section {
+  width: 100%;
+  overflow: hidden;
 }
 .conform{
   width: 40%;
@@ -40,10 +50,7 @@ p{
 /* utility classes END */
 
 /* NAVBAR  */
-.navbar{
-  /* position: sticky !important;
-  top: 0; */
-}
+
 .modal-content{
     background-color: #0d0b0e;
     z-index: 22;
@@ -121,9 +128,32 @@ height: 40px;
     flex-wrap: wrap !important;
 }
 .TYB_CON{
-    width: 260px;
+    width: 220px;
+    height: 310px;
     background-color: #0d0b0e;
-    margin-bottom: 20px !important;
+    /* margin-bottom: 20px !important; */
+    
+    margin: auto;
+}
+.TYB_CON2{
+    width: 250px;
+    height: 260px;
+    background-color: #0d0b0e;
+    /* margin-bottom: 20px !important; */
+    margin: auto;
+}
+.TYB_CON4{
+    width: 320px;
+    height: 220px;
+    background-color: #0d0b0e;
+    /* margin-bottom: 20px !important; */
+    margin: auto;
+}
+.TYB_CON6{
+    width: 260px;
+    height: 200px;
+    background-color: #0d0b0e;
+    /* margin-bottom: 20px !important; */
     margin: auto;
 }
 /* <!-- Telling your brand story with colours, fonts and designs END. --> */
@@ -176,6 +206,17 @@ flex-wrap: wrap;
 
 }
 
+.zoom {
+  transition: transform 7s;
+  z-index: -11;
+  /* opacity: -12; */
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
 .counter-item {
 
 background-color: #0d0b0e;  /* padding: 3rem 1.5rem; */
@@ -232,6 +273,20 @@ width: 250px;
   }
 
   @media only screen and (max-width: 600px) {
+    .TYB_CON{
+margin-bottom: 20px;
+    }
+    .TYB_CON2{
+margin-bottom: 20px;
+    }
+    .TYB_CON4{
+margin-bottom: 20px;
+    }
+    .TYB_CON6{
+margin-bottom: 20px;
+width: 100%;
+height: 150px;
+    }
     .counter-item{
       width: 100%;
       padding: 20px;
@@ -269,3 +324,34 @@ width: 250px;
       height: 40vh;
     }
   }
+
+
+
+  /* Services Syle  */
+  /* website Page Start  */
+  .website{
+    /* background-image: url("./images/cover-pic-web-development-new.svg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #000000;
+    background-blend-mode: darken;
+    padding: 20px;
+    height:  80vh;
+  }
+  .tech-main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tech{
+    height: 200px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-bottom: 20px;
+    margin: 10px;
+    width: 200px;
+  }
+  /* website Page Start END */
+  
