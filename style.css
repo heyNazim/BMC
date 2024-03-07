@@ -8,7 +8,18 @@
   width: 100%;
 }
 /* utility classes */
-
+.mySlides3{
+  max-height: 300px;
+  width: 100%;
+}
+.mySlides2{
+  max-height: 300px;
+  width: 100%;
+}
+.mySlides{
+  max-height: 300px;
+  width: 100%;
+}
 #deskopbanner{
   height:85vh;
   overflow: hidden !important;
