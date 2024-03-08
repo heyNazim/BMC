@@ -174,7 +174,15 @@ height: 40px;
     background-color: #fff;
     margin-bottom: 20px !important;
     text-align: center;
+    height: 90px;
     margin: auto;
+}
+.Serving-the-best-box>img{
+
+height:  100%;
+aspect-ratio: 3/2;
+object-fit: contain;
+
 }
 /* <!-- Serving the best end. --> */
 /* Make-Something-Together */
